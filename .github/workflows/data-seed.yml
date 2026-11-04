@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: UniXNU/UniXNU
-          ref: 5d6136f0380aae8ffb7094af0d36935eb13d6f11
+          ref: 82b847c4ac3f68a57024b3082ffa3a03442defd9
           path: unixnu
           persist-credentials: false
       - name: Read pinned DarwinBoot packer
