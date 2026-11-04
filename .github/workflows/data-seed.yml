@@ -1,0 +1,52 @@
+name: APFS Data seed (21H461)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apfs-data-seed-21H461
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    runs-on: macos-15
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Read pinned UniXNU image and packing helpers
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: UniXNU/UniXNU
+          ref: 5d6136f0380aae8ffb7094af0d36935eb13d6f11
+          path: unixnu
+          persist-credentials: false
+      - name: Read pinned DarwinBoot packer
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: UniXNU/DarwinBoot
+          ref: 3325e352d7df68a9f9ad74832ed94a6acbbd7390
+          path: darwinboot
+          persist-credentials: false
+      - name: Format, populate, verify and pack Data
+        shell: bash
+        run: |
+          set -euo pipefail
+          sw_vers
+          sudo "$(command -v python3)" scripts/build_data_seed.py --unixnu "$PWD/unixnu" --darwinboot "$PWD/darwinboot" --output "$PWD/output"
+          cat output/seed.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload the generated Data seed
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: apfs-data-21H461
+          path: |
+            output/data-21H461.dbr
+            output/seed.json
+            output/expected-var.json
+            output/fsck-apfs.log
+          if-no-files-found: error
+          retention-days: 3

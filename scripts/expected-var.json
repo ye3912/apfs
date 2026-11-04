@@ -1,0 +1,1523 @@
+[
+  {
+    "path": "",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "preferences",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "preferences/Logging",
+    "mode": "0o755",
+    "uid": 272,
+    "gid": 272,
+    "type": "directory"
+  },
+  {
+    "path": "preferences/Logging/Processes",
+    "mode": "0o755",
+    "uid": 272,
+    "gid": 272,
+    "type": "directory"
+  },
+  {
+    "path": "preferences/Logging/Subsystems",
+    "mode": "0o755",
+    "uid": 272,
+    "gid": 272,
+    "type": "directory"
+  },
+  {
+    "path": "dextcores",
+    "mode": "0o755",
+    "uid": 270,
+    "gid": 270,
+    "type": "directory"
+  },
+  {
+    "path": "networkd",
+    "mode": "0o755",
+    "uid": 24,
+    "gid": 24,
+    "type": "directory"
+  },
+  {
+    "path": "hardware",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "empty",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 3,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/Info.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 410,
+    "sha256": "7de86fc93f0437e9b4ffba1d6cb24164a19488bdde063b64296f5ca476036507"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Info.json",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 631,
+    "sha256": "4ab35894df371c0d198f423ce217d10d9cd51579babb25a668f537c4408ba98a"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/de.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/he.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/forest",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/forest/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 64143,
+    "sha256": "d138cb9161e67fbeeba00b05d0b4dbad011f5104a4e6e9b1b74bfbfbf053edaa"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/forest/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 6933,
+    "sha256": "a4dc592b3e2e2e4ad645455b7b7a7c6ae3992a7102f8ae44dec2b78cad969642"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ar.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/el.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ja.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fireplace",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fireplace/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 74220,
+    "sha256": "f97ad853422893bed2ed18f327dfdbb9b0c3fa735552664c5606b294824fa02b"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fireplace/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 7181,
+    "sha256": "e973eeeb60c34a9c03ffe980b496fc1c1036d8ee68c72af7637036508088126f"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ocean",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ocean/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 63265,
+    "sha256": "6b2794bfe05913f92334fd4404729675c9dbd14137d39b0bba7cc60da38d49be"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ocean/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 7666,
+    "sha256": "4b21beb9f3ae03f3e49df7584fd081af1604c1ccc5f52221e15715e2e7c31eeb"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/uk.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/es_419.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/rain",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/rain/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 64056,
+    "sha256": "7b456bed24b514d37580c9bab5ec8f7394938acc07c181eadd2d9dca16eaf1fc"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/rain/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 7264,
+    "sha256": "df72fb06dcfc0c7c9c2255f4b558b38ca06fa08fd027eb4318919b27a7323eca"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/pt_PT.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/es.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/da.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/it.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/sk.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/zh_CN.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/stream",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/stream/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 64884,
+    "sha256": "c1ec1efc51035a48fbe8eeee8979ca9237f995a7ddecd70e3d3bc726c5db63ac"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/stream/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 7628,
+    "sha256": "332dca8faf60923ef5a149d61bbf73ef9b6367199c6b8962999b077c5822c134"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/pt_BR.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ms.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/sv.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/en_AU.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/cs.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ko.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/no.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/hu.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/tr.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/SSLocalizedAssets.loctable",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 5123,
+    "sha256": "9c5e4cff27edb717225d814a9a6a12f4a0cdd9b530d85cee94b91e8955c6582b"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/pl.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fr_CA.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/vi.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ru.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/en_GB.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fr.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/fi.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/id.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/nl.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/th.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/whitenoise",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/whitenoise/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 63051,
+    "sha256": "64f7cf69e0c7290db7d35c42e888a53f2ea6f2c742624f77a0639e8dbb9f3c63"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/whitenoise/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 6616,
+    "sha256": "2ffaeece3d8b914f3f6839d01583af99e7c6f538d873440ce8f68edbc0dc4b0c"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/night",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/night/demo.m4a",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 64272,
+    "sha256": "344ac3a643155dc3349c0ff355da25c0218ecf1970c17da08b6fabfec50758de"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/night/artwork.jpg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 6278,
+    "sha256": "9e8d793069fcedb4ae69d0125c58939bdc320b842d3f1873da810565658ec38e"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ro.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/zh_HK.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/hr.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/hi.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/ca.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/Resources/zh_TW.lproj",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/5223134c9d602a6a5ddada7b8fd315e09f1dd351.asset/AssetData/SupportVersion.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 228,
+    "sha256": "9e6297bb7ef3fa6e6e6c4fdf785e618d28b3ab4793a3cd70fde7d782c319b91d"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset/AssetSource.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 13807,
+    "sha256": "5987a9739c1977a08736a00e7b397e4c3af61efde996ae4d29fc9643f6211b7e"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset/Info.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 454,
+    "sha256": "53bcd36e7e55b8861b8b77d7b4c4905a4160c0260611bf76402cb5c7928475ae"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset/AssetData",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset/AssetData/anchor.cfg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 9368,
+    "sha256": "e66a0fb6e12210cd20f93bdc499732ee5dfe955ae763d7b341e74070f61a9021"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset/AssetSource.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 13807,
+    "sha256": "5987a9739c1977a08736a00e7b397e4c3af61efde996ae4d29fc9643f6211b7e"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset/Info.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 454,
+    "sha256": "4f3822f394eafe919254e6a174f7ae321b277577730591f4e03ad6238f127f45"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset/AssetData",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset/AssetData/anchor.cfg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 9368,
+    "sha256": "e9047d9b1a45ae636c72465fd20abb8dd68fa4d1a66e95c2e353c53c7e1c36e1"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset/AssetSource.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 13807,
+    "sha256": "5987a9739c1977a08736a00e7b397e4c3af61efde996ae4d29fc9643f6211b7e"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset/Info.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 454,
+    "sha256": "cc1c01995b74c77375ac00b23901334ee3eca649c1f424e4200352b935cbff4c"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset/AssetData",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset/AssetData/anchor.cfg",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 9368,
+    "sha256": "0f75d90ae0df51528c1be39cd77277984f440ea127e7162bc840833e213714e8"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/ac1044f741e0d6647bcae13144089f1004496dca.asset",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/ac1044f741e0d6647bcae13144089f1004496dca.asset/Info.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 503,
+    "sha256": "e214982e62cd6413b38e11ca0c29084ebebe99451b74ea7b54a49e9bec4e782a"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/ac1044f741e0d6647bcae13144089f1004496dca.asset/AssetData",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/ac1044f741e0d6647bcae13144089f1004496dca.asset/AssetData/CarPlayAppDenylist.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 114,
+    "sha256": "8d8486ceb4e0b0d08b7419c4f982401f2a183e8426c48c55f7c41274c41d220a"
+  },
+  {
+    "path": "MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/ac1044f741e0d6647bcae13144089f1004496dca.asset/AssetData/CarPlayCapabilities.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 5752,
+    "sha256": "a591bcdd3afd0e97651104e790c5c318d8e398986c519c0a1a7f6ea98c9760bf"
+  },
+  {
+    "path": "buddy",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "vm",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "msgs",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "msgs/bounds",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs",
+    "mode": "0o770",
+    "uid": 0,
+    "gid": 80,
+    "type": "directory"
+  },
+  {
+    "path": "logs/WindowServer",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "logs/mediaserverd",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "logs/hidfw-crashlogs",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "logs/Baseband",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "audit",
+    "mode": "0o700",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "installd",
+    "mode": "0o755",
+    "uid": 33,
+    "gid": 33,
+    "type": "directory"
+  },
+  {
+    "path": "MobileSoftwareUpdate",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "mobile",
+    "mode": "0o711",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library",
+    "mode": "0o711",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Caches",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/ExternalAccessory",
+    "mode": "0o775",
+    "uid": 501,
+    "gid": 286,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/.localized",
+    "mode": "0o444",
+    "uid": 501,
+    "gid": 501,
+    "type": "file",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "mobile/Library/AddressBook",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/WebClips",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Safari",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Inboxes",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Keyboard",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Logs",
+    "mode": "0o775",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Logs/CrashReporter",
+    "mode": "0o775",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Logs/CrashReporter/DiagnosticLogs",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Preferences",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Preferences/.GlobalPreferences.plist",
+    "mode": "0o644",
+    "uid": 501,
+    "gid": 501,
+    "type": "file",
+    "bytes": 89,
+    "sha256": "633dfefd4eb05ce58478a7596d63719d0eb6408effe91a97648b7f5f4408f5ac"
+  },
+  {
+    "path": "mobile/Library/Cookies",
+    "mode": "0o700",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Library/Application Support",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Media",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Media/Photos",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Media/DCIM",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/Media/PhotoData",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "mobile/.forward",
+    "mode": "0o444",
+    "uid": 501,
+    "gid": 501,
+    "type": "file",
+    "bytes": 10,
+    "sha256": "cab66070a27e6d3f01242d7f83f55429e42dd6f7e37a06997150cf58a6bf8fe0"
+  },
+  {
+    "path": "mobile/Applications",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "MobileDevice",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "MobileDevice/ProvisioningProfiles",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "wireless",
+    "mode": "0o755",
+    "uid": 25,
+    "gid": 25,
+    "type": "directory"
+  },
+  {
+    "path": "wireless/Library",
+    "mode": "0o755",
+    "uid": 25,
+    "gid": 25,
+    "type": "directory"
+  },
+  {
+    "path": "wireless/baseband_data",
+    "mode": "0o755",
+    "uid": 25,
+    "gid": 25,
+    "type": "directory"
+  },
+  {
+    "path": "OOPJit",
+    "mode": "0o777",
+    "uid": 0,
+    "gid": 80,
+    "type": "directory"
+  },
+  {
+    "path": "OOPJit/anchor",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 58,
+    "sha256": "e05ee625310a5a9ba07d990067c52b20e4564330f718b75135b37fea4700a457"
+  },
+  {
+    "path": "root",
+    "mode": "0o750",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "root/Library",
+    "mode": "0o700",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "root/Library/Preferences",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "root/Library/Preferences/com.apple.threadradiodData.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 1419,
+    "sha256": "0519177e908ea8ad1cd1d229c53b56e7640f94c2cd57b338db405802e09d032a"
+  },
+  {
+    "path": "root/Library/Preferences/com.apple.ccmapping_ios.plist",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 19030,
+    "sha256": "0aba5069137316128311d6ac9e72a3a4d07d8c289638991f92bdac129c01cd8f"
+  },
+  {
+    "path": "db",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/diskimagesiod",
+    "mode": "0o750",
+    "uid": 271,
+    "gid": 271,
+    "type": "directory"
+  },
+  {
+    "path": "db/os_eligibility",
+    "mode": "0o755",
+    "uid": 297,
+    "gid": 297,
+    "type": "directory"
+  },
+  {
+    "path": "db/timezone",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/timezone/localtime",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "symlink",
+    "target": "/var/db/timezone/zoneinfo/US/Pacific"
+  },
+  {
+    "path": "db/ondemand",
+    "mode": "0o755",
+    "uid": 249,
+    "gid": 249,
+    "type": "directory"
+  },
+  {
+    "path": "db/sysdiagnose",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/sysdiagnose/com.apple.sysdiagnose",
+    "mode": "0o700",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/sysdiagnose/com.apple.sysdiagnose/.file",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 0,
+    "type": "file",
+    "bytes": 2,
+    "sha256": "e16f1596201850fd4a63680b27f603cb64e67176159be3d8ed78a4403fdb1700"
+  },
+  {
+    "path": "db/sysdiagnose/com.apple.ScreenshotServicesService",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/sysdiagnose/com.apple.ScreenshotServicesService/.file",
+    "mode": "0o644",
+    "uid": 0,
+    "gid": 501,
+    "type": "file",
+    "bytes": 2,
+    "sha256": "e16f1596201850fd4a63680b27f603cb64e67176159be3d8ed78a4403fdb1700"
+  },
+  {
+    "path": "db/astris",
+    "mode": "0o755",
+    "uid": 245,
+    "gid": 245,
+    "type": "directory"
+  },
+  {
+    "path": "db/analyticsd",
+    "mode": "0o750",
+    "uid": 263,
+    "gid": 263,
+    "type": "directory"
+  },
+  {
+    "path": "db/ExtensibleSSO",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/ExtensibleSSO/Configuration",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/rmd",
+    "mode": "0o750",
+    "uid": 277,
+    "gid": 277,
+    "type": "directory"
+  },
+  {
+    "path": "db/lsd",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/knowledgegraphd",
+    "mode": "0o750",
+    "uid": 279,
+    "gid": 279,
+    "type": "directory"
+  },
+  {
+    "path": "db/Sandbox",
+    "mode": "0o700",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/coreml",
+    "mode": "0o750",
+    "uid": 280,
+    "gid": 280,
+    "type": "directory"
+  },
+  {
+    "path": "db/fpsd",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/com.apple.xpc.launchd",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/com.apple.xpc.launchd/config",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/com.apple.dt.automationmode",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/reportmemoryexception",
+    "mode": "0o750",
+    "uid": 269,
+    "gid": 269,
+    "type": "directory"
+  },
+  {
+    "path": "db/lockdown",
+    "mode": "0o700",
+    "uid": 213,
+    "gid": 213,
+    "type": "directory"
+  },
+  {
+    "path": "db/gpsd",
+    "mode": "0o700",
+    "uid": 267,
+    "gid": 267,
+    "type": "directory"
+  },
+  {
+    "path": "db/biome",
+    "mode": "0o751",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/diagnostics",
+    "mode": "0o751",
+    "uid": 272,
+    "gid": 272,
+    "type": "directory"
+  },
+  {
+    "path": "db/datadetectors",
+    "mode": "0o711",
+    "uid": 257,
+    "gid": 257,
+    "type": "directory"
+  },
+  {
+    "path": "db/findmydevice",
+    "mode": "0o755",
+    "uid": 254,
+    "gid": 254,
+    "type": "directory"
+  },
+  {
+    "path": "db/UpdateMetrics",
+    "mode": "0o777",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/com.apple.xpc.roleaccountd.staging",
+    "mode": "0o700",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/eligibilityd",
+    "mode": "0o755",
+    "uid": 297,
+    "gid": 297,
+    "type": "directory"
+  },
+  {
+    "path": "db/com.apple.findmy.findmybeaconingd",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/nearbyd",
+    "mode": "0o750",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "db/mmaintenanced",
+    "mode": "0o750",
+    "uid": 283,
+    "gid": 283,
+    "type": "directory"
+  },
+  {
+    "path": "db/timed",
+    "mode": "0o750",
+    "uid": 266,
+    "gid": 266,
+    "type": "directory"
+  },
+  {
+    "path": "db/darwindaemon",
+    "mode": "0o750",
+    "uid": 284,
+    "gid": 284,
+    "type": "directory"
+  },
+  {
+    "path": "db/darwindaemon/Library",
+    "mode": "0o750",
+    "uid": 284,
+    "gid": 284,
+    "type": "directory"
+  },
+  {
+    "path": "db/accessoryupdater",
+    "mode": "0o751",
+    "uid": 278,
+    "gid": 278,
+    "type": "directory"
+  },
+  {
+    "path": "db/DumpPanic",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "db/systemstats",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "log",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "log/mDNSResponder",
+    "mode": "0o755",
+    "uid": 65,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "log/asl",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "log/ppp",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "log/com.apple.xpc.launchd",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "folders",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "Managed Preferences",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "Managed Preferences/mobile",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  },
+  {
+    "path": "select",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "run",
+    "mode": "0o775",
+    "uid": 0,
+    "gid": 1,
+    "type": "directory"
+  },
+  {
+    "path": "protected",
+    "mode": "0o755",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "protected/trustd",
+    "mode": "0o755",
+    "uid": 282,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "Keychains",
+    "mode": "0o755",
+    "uid": 64,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "tmp",
+    "mode": "0o1777",
+    "uid": 0,
+    "gid": 0,
+    "type": "directory"
+  },
+  {
+    "path": "datamigrator",
+    "mode": "0o755",
+    "uid": 501,
+    "gid": 501,
+    "type": "directory"
+  }
+]
