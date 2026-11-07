@@ -20,6 +20,21 @@ import zipfile
 
 LAUNCHD = '8cec9a3c44a443b08e977ccc5d577850316ad428c575dc01f09b018dbd5b6a25'
 LOGICAL = 256 * 1024**2
+SETUP_PREFERENCES = {
+    'com.apple.purplebuddy.plist': {
+        'SetupDone': True,
+        'SetupFinishedAllSteps': True,
+        'SetupVersion': 11,
+        'daemonizeNeedsToRun': False,
+    },
+    'com.apple.purplebuddy.notbackedup.plist': {
+        key: False for key in (
+            'ShouldRunDiagnosticsMiniBuddy', 'ShouldRunHSA2MiniBuddy',
+            'ShouldRunKeychainSyncMiniBuddy', 'ShouldRunMesaMiniBuddy',
+            'ShouldRunPaymentMiniBuddy', 'ShouldRunStandardMiniBuddy', 'SilentICDPUpgrade',
+        )
+    },
+}
 
 
 def sha(path):
@@ -99,6 +114,26 @@ def copy_tree(source, target, entries):
         raise ValueError('Do not pre-create tzinit output')
 
 
+def write_setup_preferences(root):
+    preferences = root / 'mobile/Library/Preferences'
+    records = []
+    for filename, values in SETUP_PREFERENCES.items():
+        path = preferences / filename
+        with path.open('xb') as stream:
+            plistlib.dump(values, stream, fmt=plistlib.FMT_BINARY)
+        os.chown(path, 501, 501, follow_symlinks=False)
+        os.chmod(path, 0o600, follow_symlinks=False)
+        if plistlib.loads(path.read_bytes()) != values:
+            raise ValueError(f'Setup state readback failed for {filename}')
+        records.append({'path': str(path.relative_to(root)), 'mode': '0o600',
+                        'uid': 501, 'gid': 501, 'type': 'file',
+                        'bytes': path.stat().st_size, 'sha256': sha(path), 'values': values})
+    validate_tree(root, records)
+    if any((root / 'keybags').iterdir()):
+        raise ValueError('Factory seed must have no keybag')
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--unixnu', type=Path, required=True)
@@ -151,6 +186,8 @@ def main():
             info = plistlib.loads(run('diskutil', 'info', '-plist', volume))
             volume_uuid = info['VolumeUUID']
             copy_tree(source, out / 'data-mount', expected)
+            setup = write_setup_preferences(out / 'data-mount')
+            validate_tree(out / 'data-mount', expected)
             run('sync')
             run('diskutil', 'unmount', volume)
             with (out / 'fsck-apfs.log').open('wb') as log:
@@ -174,8 +211,9 @@ def main():
                   apple_fsck_passed=True, initial_tree_content_and_posix_metadata_checked=True,
                   guest_mutable=True, persistent=False, initial_seed_signature_verified=False,
                   owner_keybag_created=False, os_inputs_modified=False,
+                  skip_setup=True, setup_preferences=setup,
                   runtime_qualified=False,
-                  limits=['Factory var tree only; staged_system_apps excluded.',
+                  limits=['Factory var tree plus two PurpleBuddy preferences; staged_system_apps excluded.',
                           'Mutable RAM Data, discarded on reboot. No user keybag, signed Data policy, or production storage claim.',
                           'Native iPadOS APFS mount, tzinit and later userspace still require device evidence.'])
     (out / 'seed.json').write_text(json.dumps(report, indent=2) + '\n')
