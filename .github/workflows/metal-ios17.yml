@@ -1,9 +1,9 @@
-name: R59 iOS 17 Metal addon
+name: R72 iOS 17 Metal addon
 
 on:
   push:
-    branches: [codex/r59-metal-ios17]
-    paths: [.github/workflows/metal-ios17.yml]
+    branches: [codex/r72-metal-pipeline]
+    paths: [.github/workflows/metal-ios17.yml, adreno-metal-disable-pipeline-log.patch]
   workflow_dispatch:
 
 permissions:
@@ -14,6 +14,11 @@ jobs:
     runs-on: macos-26
     timeout-minutes: 75
     steps:
+      - name: Check out the board patch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          path: recipe
       - name: Check out pinned UniXNU and GPU components
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -31,6 +36,7 @@ jobs:
         run: |
           xcrun --sdk iphoneos --show-sdk-path
           git submodule update --init --depth 1 drivers/Adreno740 drivers/AdrenoMetal drivers/GopFramebuffer kits/AdrenoPM4
+          git -C drivers/AdrenoMetal apply "$GITHUB_WORKSPACE/recipe/adreno-metal-disable-pipeline-log.patch"
           ln -s GopFramebuffer drivers/NativeMobileDisplay
           test -f drivers/NativeMobileDisplay/NativeGOPWire.h
           brew install bison flex glslang shaderc spirv-tools llvm
@@ -83,7 +89,7 @@ jobs:
       - name: Upload only the addon and its signing record
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         with:
-          name: native-adreno-metal-ios17-r59
+          name: native-adreno-metal-ios17-r72
           path: |
             unixnu/build/gpuaddon.bin
             unixnu/build/adreno-metal-plugin/trust.json
