@@ -1,0 +1,100 @@
+name: R59 iOS 17 Metal addon
+
+on:
+  push:
+    branches: [codex/r59-metal-ios17]
+    paths: [.github/workflows/metal-ios17.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  addon:
+    runs-on: macos-26
+    timeout-minutes: 75
+    steps:
+      - name: Check out pinned UniXNU and GPU components
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: UniXNU/UniXNU
+          ref: 5d6136f0380aae8ffb7094af0d36935eb13d6f11
+          persist-credentials: false
+          submodules: recursive
+          path: unixnu
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.13'
+      - name: Prepare toolchain
+        working-directory: unixnu
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: '1'
+        run: |
+          xcrun --sdk iphoneos --show-sdk-path
+          brew install bison flex glslang shaderc spirv-tools llvm
+          printf '%s\n' "$(brew --prefix bison)/bin" "$(brew --prefix flex)/bin" "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          rustup toolchain install 1.98.0 --profile minimal --target aarch64-apple-ios
+          python3 -m venv .cache/mesa-venv
+          .cache/mesa-venv/bin/pip install -r scripts/requirements-adreno-compiler.txt
+      - name: Fetch the pinned Mesa and Metal bridge inputs
+        working-directory: unixnu
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          import subprocess
+
+          def checkout(path, origin, revision, mirror=None):
+              path.mkdir(parents=True, exist_ok=True)
+              subprocess.run(['git', 'init', '-q', path], check=True)
+              command = ['git', '-C', path, 'fetch', '--depth=1']
+              first = subprocess.run([*command, origin, revision])
+              if first.returncode:
+                  if mirror is None:
+                      first.check_returncode()
+                  subprocess.run([*command, mirror, revision], check=True)
+              subprocess.run(['git', '-C', path, 'checkout', '--detach', 'FETCH_HEAD'], check=True)
+
+          mesa = json.loads(Path('scripts/data/adreno-compiler-inputs.json').read_text())
+          source = Path('.cache/mesa-work')
+          checkout(source, mesa['mesa']['mirror'], mesa['mesa']['commit'], mesa['mesa']['repository'])
+          for patch in mesa['patches']:
+              subprocess.run(['git', '-C', source, 'apply', Path(patch).resolve()], check=True)
+          bridge = json.loads(Path('scripts/data/gpu-metal-vulkan-inputs.json').read_text())['translator']
+          checkout(Path('.cache/gpu-reference/metal2vulkan'), bridge['repository'], bridge['commit'])
+          PY
+      - name: Build and sign the iOS 17 addon
+        working-directory: unixnu
+        run: |
+          python3 scripts/build-turnip-darwin.py --target ios
+          # The pinned iOS-only script has no --no-replay switch. Omit its optional host capture.
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/build-adreno-metal-plugin.py')
+          data = p.read_text()
+          call = "subprocess.run(['python3', ROOT / 'scripts/gen-turnip-replay.py'], check=True)\n"
+          assert data.count(call) == 1
+          p.write_text(data.replace(call, ''))
+          PY
+          python3 scripts/build-adreno-metal-plugin.py
+          python3 scripts/make-gpu-addon.py --publish build/gpuaddon.bin
+      - name: Upload only the addon and its signing record
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: native-adreno-metal-ios17-r59
+          path: |
+            unixnu/build/gpuaddon.bin
+            unixnu/build/adreno-metal-plugin/trust.json
+          if-no-files-found: error
+          retention-days: 2
+      - name: Upload compiler diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: native-adreno-metal-ios17-build-logs
+          path: |
+            unixnu/.cache/*turnip*.log
+            unixnu/build/mesa-tu-ios/meson-logs/meson-log.txt
+            unixnu/build/adreno-metal-bridge/build-ios.log
+          if-no-files-found: ignore
+          retention-days: 2
