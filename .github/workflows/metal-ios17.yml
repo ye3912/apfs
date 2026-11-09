@@ -30,7 +30,9 @@ jobs:
           HOMEBREW_NO_AUTO_UPDATE: '1'
         run: |
           xcrun --sdk iphoneos --show-sdk-path
-          git submodule update --init --depth 1 drivers/Adreno740 drivers/AdrenoMetal kits/AdrenoPM4
+          git submodule update --init --depth 1 drivers/Adreno740 drivers/AdrenoMetal drivers/GopFramebuffer kits/AdrenoPM4
+          ln -s GopFramebuffer drivers/NativeMobileDisplay
+          test -f drivers/NativeMobileDisplay/NativeGOPWire.h
           brew install bison flex glslang shaderc spirv-tools llvm
           printf '%s\n' "$(brew --prefix bison)/bin" "$(brew --prefix flex)/bin" "$HOME/.cargo/bin" >> "$GITHUB_PATH"
           rustup toolchain install 1.98.0 --profile minimal --target aarch64-apple-ios
