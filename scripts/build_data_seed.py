@@ -19,7 +19,8 @@ import tomllib
 import zipfile
 
 LAUNCHD = '8cec9a3c44a443b08e977ccc5d577850316ad428c575dc01f09b018dbd5b6a25'
-LOGICAL = 256 * 1024**2
+SIZE_MIB = 512
+LOGICAL = SIZE_MIB * 1024**2
 SETUP_PREFERENCES = {
     'com.apple.purplebuddy.plist': {
         'SetupDone': True,
@@ -179,7 +180,7 @@ def main():
             raise ValueError('Original launchd pin mismatch')
         source = os_mount / 'private/var'
         validate_tree(source, expected)
-        run('hdiutil', 'create', '-size', '256m', '-layout', 'NONE', '-fs', 'APFS',
+        run('hdiutil', 'create', '-size', f'{SIZE_MIB}m', '-layout', 'NONE', '-fs', 'APFS',
             '-volname', 'OwnerData', '-type', 'UDTO', raw)
         data_device, volume = attach(raw, out / 'data-mount', False)
         try:
