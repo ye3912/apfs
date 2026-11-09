@@ -18,9 +18,8 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: UniXNU/UniXNU
-          ref: 5d6136f0380aae8ffb7094af0d36935eb13d6f11
+          ref: 066c8d8315f83749d28bcae2faf3595718646be5
           persist-credentials: false
-          submodules: recursive
           path: unixnu
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
@@ -31,6 +30,7 @@ jobs:
           HOMEBREW_NO_AUTO_UPDATE: '1'
         run: |
           xcrun --sdk iphoneos --show-sdk-path
+          git submodule update --init --depth 1 drivers/Adreno740 drivers/AdrenoMetal kits/AdrenoPM4
           brew install bison flex glslang shaderc spirv-tools llvm
           printf '%s\n' "$(brew --prefix bison)/bin" "$(brew --prefix flex)/bin" "$HOME/.cargo/bin" >> "$GITHUB_PATH"
           rustup toolchain install 1.98.0 --profile minimal --target aarch64-apple-ios
