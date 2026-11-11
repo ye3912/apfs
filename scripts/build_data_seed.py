@@ -19,8 +19,6 @@ import tomllib
 import zipfile
 
 LAUNCHD = '8cec9a3c44a443b08e977ccc5d577850316ad428c575dc01f09b018dbd5b6a25'
-SIZE_MIB = 512
-LOGICAL = SIZE_MIB * 1024**2
 SETUP_PREFERENCES = {
     'com.apple.purplebuddy.plist': {
         'SetupDone': True,
@@ -140,7 +138,9 @@ def main():
     parser.add_argument('--unixnu', type=Path, required=True)
     parser.add_argument('--darwinboot', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--size-mib', type=int, choices=(512, 3072), default=512)
     a = parser.parse_args()
+    logical = a.size_mib * 1024**2
     if platform.system() != 'Darwin' or os.geteuid() != 0:
         raise SystemExit('Requires macOS runner and sudo for original ownership')
     out = a.output.resolve()
@@ -148,7 +148,7 @@ def main():
     sys.path.insert(0, str(a.unixnu.resolve() / 'scripts'))
     from unixnu.ipsw import RangeFile
     sys.path.insert(0, str(a.darwinboot.resolve() / 'Test'))
-    from packed_ramdisk import pack
+    from packed_ramdisk import PLAIN_HASH_LIMIT, pack, regions
     profile = tomllib.loads((a.unixnu / 'profiles/os/ipados-17.7.11-21H461/profile.toml').read_text())['ipsw']
     stream = RangeFile(profile['url'])
     archive = zipfile.ZipFile(stream)
@@ -180,7 +180,7 @@ def main():
             raise ValueError('Original launchd pin mismatch')
         source = os_mount / 'private/var'
         validate_tree(source, expected)
-        run('hdiutil', 'create', '-size', f'{SIZE_MIB}m', '-layout', 'NONE', '-fs', 'APFS',
+        run('hdiutil', 'create', '-size', f'{a.size_mib}m', '-layout', 'NONE', '-fs', 'APFS',
             '-volname', 'OwnerData', '-type', 'UDTO', raw)
         data_device, volume = attach(raw, out / 'data-mount', False)
         try:
@@ -199,12 +199,33 @@ def main():
             run('hdiutil', 'detach', data_device)
     finally:
         run('hdiutil', 'detach', os_device)
-    if raw.stat().st_size != LOGICAL or raw.open('rb').read(36)[32:36] != b'NXSB':
+    with raw.open('rb') as stream:
+        header = stream.read(48)
+    if (raw.stat().st_size != logical or header[32:36] != b'NXSB'
+            or int.from_bytes(header[36:40], 'little') != 4096
+            or int.from_bytes(header[40:48], 'little') * 4096 != logical):
         raise ValueError('Expected raw APFS container, no GPT wrapper')
-    metadata = pack(raw, out / 'data-21H461.dbr')
-    if metadata['sha256'] != sha(raw):
+    packed = out / 'data-21H461.dbr'
+    metadata = pack(raw, packed)
+    raw_sha256 = sha(raw)
+    if logical > PLAIN_HASH_LIMIT:
+        packed_size, extents = regions(packed.read_bytes())
+        reconstructed = hashlib.sha256()
+        zero = bytes(1024**2)
+        previous = 0
+        for offset, data in [*extents, (packed_size, b'')]:
+            while previous < offset:
+                count = min(len(zero), offset - previous)
+                reconstructed.update(memoryview(zero)[:count])
+                previous += count
+            reconstructed.update(data)
+            previous += len(data)
+        reconstructed_sha256 = reconstructed.hexdigest()
+    else:
+        reconstructed_sha256 = metadata['sha256']
+    if reconstructed_sha256 != raw_sha256:
         raise ValueError('Packed reconstruction differs from complete raw image')
-    report = dict(metadata, volume_uuid=volume_uuid, source_build='21H461',
+    report = dict(metadata, raw_sha256=raw_sha256, volume_uuid=volume_uuid, source_build='21H461',
                   source_os_member=member, source_os_sha256=expected_hash,
                   source_launchd_sha256=LAUNCHD,
                   source_entries=len(expected), source_regular_files=sum(e['type'] == 'file' for e in expected),
